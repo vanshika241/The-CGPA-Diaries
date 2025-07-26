@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>CGPA to Percentage </title>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+      <div class="absolute inset-0 z-0"
+       style="
+         background: #000000;
+         background-image:
+           linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px),
+           linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px),
+           radial-gradient(circle, rgba(255,255,255,0.4) 1px, transparent 1px);
+         background-size: 20px 20px, 20px 20px, 20px 20px;
+         background-position: 0 0, 0 0, 0 0;
+       ">
+  </div>
+    <div class="relative z-10">
+    <h1 class="text-white font-semibold text-7xl uppercase mt-10 mb-15 text-center">CGPA to Percentage </h1>
+    <div class="flex justify-center items-center ">
+        <div class="bg-orange-100 rounded px-4 py-10 max-w-3xl space-y-6">
+            <div>
+            <label for="cgpa" class=" text-xl semibold mb-2">Enter the CGPA</label>
+            <input type="number" name="" id="cgpa" class="border border-gray-800 rounded p-2 ml-4 mr-4 ">
+            </div>
+
+            <div>
+            <label for="scale"  class=" text-xl semibold mb-2 ">Enter the scale </label>
+            <input type="radio" name="scale" id="" value="5" class="mr-2  ml-4">Out of 5
+                <input type="radio" name="scale" id="" value="10" class="mr-2 ml-4 ">Out of 10
+            </div>
+            </div> 
+
+           
+            
+       
+    </div>
+
+     <div class="flex gap-10 justify-center items-center mt-10">
+                <button class="bg-orange-400 px-6 py-3 rounded text-2xl font-semibold" id="btn">Calculate</button>
+                <h3 class="text-3xl semibold text-white" id="res">Result</h3>
+            </div>
+
+            </div>
+    <script src="percentage.js"></script>
+</body>
+</html>
