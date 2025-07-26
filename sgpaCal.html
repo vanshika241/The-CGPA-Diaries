@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>SGPA Calculation</title>
+    <style>
+        body{
+            background-color: #874541;
+        }
+    </style>
+</head>
+<body>
+      <div class="absolute inset-0 z-0"
+       style="
+         background: #000000;
+         background-image:
+           linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px),
+           linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px),
+           radial-gradient(circle, rgba(255,255,255,0.4) 1px, transparent 1px);
+         background-size: 20px 20px, 20px 20px, 20px 20px;
+         background-position: 0 0, 0 0, 0 0;
+       ">
+  </div>
+
+    <div class="relative z-10">
+    <h1 class="text-7xl text-center mt-10 text-orange-100 uppercase">SGPA Calculate </h1>
+    <div class="flex justify-center align-center" >
+        <div class="bg-orange-100 shadow-md rounded-lg p-6   mt-10  max-w-2xl">
+            <table class="w-full text-left border-collapse ">
+                <thead class="bg-orange-300 text-grey-800">
+                    <tr>
+                        <th class="py-3 px-4 font-semibold">Subject</th>
+                        <th class="py-3 px-4 font-semibold">Credit</th>
+                        <th class="py-3 px-4 font-semibold">Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="even:bg-orange-100">
+                        <td class="py-2 px-4 ">Subject 1</td>
+                        <td class="py-2 px-4 ">
+                            <input type="number" name=""  class="w-50 p-1  border border-gray-800 rounded focus:outline-none  focus:ring-2 focus:ring-orange-400  ">
+                        </td>
+                        <td class="py-2 px-4 ">
+                            <select name="" id="" class="p-1 border border-gray-800 rounded w-20">
+                                <option value="Choose one"></option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                     <tr>
+                        <td class="py-2 px-4 ">Subject 2</td>
+                        <td class="py-2 px-4 ">
+                            <input type="number" name=""  class="w-50 p-1  border border-gray-800 rounded focus:outline-none  focus:ring-2 focus:ring-orange-400  ">
+                        </td>
+                        <td class="py-2 px-4 ">
+                            <select name="" id="" class="p-1 border border-gray-800 rounded w-20">
+                                <option value="Choose one"></option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td class="py-2 px-4 ">Subject 3</td>
+                        <td class="py-2 px-4 ">
+                            <input type="number" name=""  class="w-50 p-1  border border-gray-800 rounded focus:outline-none  focus:ring-2 focus:ring-orange-400  ">
+                        </td>
+                        <td class="py-2 px-4 ">
+                            <select name="" id="" class="p-1 border border-gray-800 rounded w-20">
+                                <option value="Choose one"></option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                     <tr >
+                        <td class="py-2 px-4 ">Subject 4</td>
+                        <td class="py-2 px-4 ">
+                            <input type="number" name=""  class="w-50 p-1  border border-gray-800 rounded focus:outline-none  focus:ring-2 focus:ring-orange-400  ">
+                        </td>
+                        <td class="py-2 px-4 ">
+                            <select name="" id="" class="p-1 border border-gray-800 rounded w-20">
+                                <option value="Choose one"></option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                     <tr>
+                        <td class="py-2 px-4 ">Subject 5</td>
+                        <td class="py-2 px-4 ">
+                            <input type="number" name=""  class="w-50 p-1  border border-gray-800 rounded focus:outline-none  focus:ring-2 focus:ring-orange-400  ">
+                        </td>
+                        <td class="py-2 px-4 ">
+                            <select name="" id="" class="p-1 border border-gray-800 rounded w-20">
+                                <option value="Choose one"></option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                     <tr>
+                        <td class="py-2 px-4 ">Subject 6</td>
+                        <td class="py-2 px-4 ">
+                            <input type="number" name=""  class="w-50 p-1  border border-gray-800 rounded focus:outline-none  focus:ring-2 focus:ring-orange-400  ">
+                        </td>
+                        <td class="py-2 px-4 ">
+                            <select name="" id="" class="p-1 border border-gray-800 rounded w-20">
+                                <option value="Choose one"></option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="flex  justify-center items-center mt-8">
+            <button class="bg-orange-400 px-6 py-3  rounded text-2xl text-white hover:bg-orange-100 transition hover:text-black" id="btn">Calculate</button>
+            <h3 id="res" class="text-white text-2xl font-semibold ml-6">Result</h3>
+
+    </div>
+    </div>
+    <script src="sgpaCal.js"></script>
+</body>
+</html>
