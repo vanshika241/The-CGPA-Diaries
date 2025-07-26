@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The CGPA Diaries</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
-<body>
-    
+
+<body class=" text-white font-sans">
+  
+    <div class="fixed inset-0 z-0"
+     style="
+       background: #000000;
+       background-image:
+         linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px),
+         linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px),
+         radial-gradient(circle, rgba(255,255,255,0.4) 1px, transparent 1px);
+       background-size: 20px 20px, 20px 20px, 20px 20px;
+       background-position: 0 0, 0 0, 0 0;
+     ">
+</div>
+<div class="fixed top-5 right-5 z-50 flex flex-row items-end gap-10 mr-5">
+  <a href="https://github.com/vanshika241" target="_blank">
+    <i class="fab fa-github text-white text-3xl hover:text-orange-400 transition duration-300"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/vanshika-chaudhary-704726259" target="_blank">
+    <i class="fab fa-linkedin text-white text-3xl hover:text-orange-400 transition duration-300"></i>
+  </a>
+</div>
+
+  <div class="relative z-10 max-w-6xl mx-auto px-6 py-16 flex flex-col items-center space-y-20">
+
+    <h1 class="text-5xl md:text-7xl font-bold text-orange-100 text-center uppercase tracking-wide">
+      The CGPA Diaries
+    </h1>
+
+    <section class="text-center max-w-3xl ">
+      <p class="text-lg md:text-xl text-gray-300 leading-relaxed hover:text-orange-400">
+        Welcome to your all-in-one academic grade converter! Effortlessly compute your SGPA, convert CGPA to percentage, and calculate your overall CGPA from multiple semesters — all with a modern, clean interface.
+      </p>
+    </section>
+
+    <section class="w-full ">
+  <h2 class="text-5xl text-center font-bold text-orange-400 mb-10 ">Features</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+
+    <div class="bg-orange-100 text-black p-10 rounded-xl shadow-lg hover:scale-105 transform transition duration-300 flex flex-col items-center text-center">
+      <h3 class="text-2xl font-bold mb-4">Calculate SGPA</h3>
+      <p class="text-base mb-4">Input your subject credits and grades to calculate SGPA instantly.</p>
+      <a href="./sgpaCal.html" target="_blank" class="text-orange-600 font-semibold underline hover:text-orange-800 text-base">
+        Click here
+      </a>
+    </div>
+
+    <div class="bg-orange-100 text-black p-10 rounded-xl shadow-lg hover:scale-105 transform transition duration-300 flex flex-col items-center text-center">
+      <h3 class="text-2xl font-bold mb-4">CGPA to Percentage</h3>
+      <p class="text-base mb-4">Convert your CGPA to percentage with your university’s formula.</p>
+      <a href="./percentage.html" target="_blank" class="text-orange-600 font-semibold underline hover:text-orange-800 text-base">
+        Click here
+      </a>
+    </div>
+
+    <div class="bg-orange-100 text-black p-10 rounded-xl shadow-lg hover:scale-105 transform transition duration-300 flex flex-col items-center text-center">
+      <h3 class="text-2xl font-bold mb-4">SGPA to CGPA</h3>
+      <p class="text-base mb-4">Combine multiple semester SGPAs to get your overall CGPA.</p>
+      <a href="./conversion.html" target="_blank" class="text-orange-600 font-semibold underline hover:text-orange-800 text-base">
+        Click here
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+  </div>
+
 </body>
 </html>
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA to CGPA </title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+     <div class="fixed inset-0 z-0"
+     style="
+       background: #000000;
+       background-image:
+         linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px),
+         linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px),
+         radial-gradient(circle, rgba(255,255,255,0.4) 1px, transparent 1px);
+       background-size: 20px 20px, 20px 20px, 20px 20px;
+       background-position: 0 0, 0 0, 0 0;
+     ">
+</div>
+
+    <div class="relative z-10">
+       <h1 class="text-white text-7xl font-semibold mt-12 text-center">SGPA TO CGPA</h1>
+
+       <div>
+        <div class="flex justify-center items-center mt-10  py-10">
+            <div  class="bg-orange-100  px-10 rounded py-5">
+                <label for="total" class="text-black text-2xl px-4 py-10 ">Enter the number of Semester</label>
+                <input type="number" name="" id="total" class=" p-2 bg-white border border gray-800 rounded ">
+            </div>
+
+           
+        </div>
+         <div class="flex justify-center mt-10 
+">
+                <button id="btn" class="bg-orange-400 px-8 py-4 rounded text-white font-semibold text-2xl cursor-pointer hover:bg-orange-100 transition hover:text-black">Submit</button>
+            </div>
+       </div>
+       
+  <div class="flex justify-center mt-10">
+    <table id="semTable" class="w-2/4 text-black bg-white rounded shadow-md hidden">
+      <thead class="bg-orange-300">
+        <tr>
+          <th class="p-2 text-left">Semester No</th>
+          <th class="p-2 text-left">Total Credits</th>
+          <th class="p-2 text-left">SGPA</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- rows  added here -->
+      </tbody>
+    </table>
+  </div>
+
+  <div class="flex justify-center items-center mt-6 gap-4">
+    <button id="calculateBtn" class=" hidden bg-orange-400 px-8 py-4 rounded text-white text-2xl cursor-pointer px-8 py-4 font-semibold hover:bg-orange-100 transition hover:text-black">Calculate CGPA</button>
+    <h3 id="res" class=" hidden  text-white font-semibold text-2xl ml-4">Result</h3>
+  </div>
+    </div>
+
+    <script src="conversion.js"></script>
+</body>
+</html>
